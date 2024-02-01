@@ -1,0 +1,96 @@
+html body {
+  font-family: Roboto, sans-serif; 
+  text-align: center;
+  margin: 0;
+	padding: 0;
+  color: #ffb5b5;
+	background-color: #132743
+}
+
+.title-wrapper{
+  margin: 0;
+	padding: 10px;
+	background-color: #407088;
+}
+  
+.title {
+  margin: 0;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 4em;
+	text-align: right;
+}
+
+.menu {
+	margin: 0;
+	width: 100%;
+	padding: 5px;
+	background: #132743;
+	min-height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	flex-wrap: wrap;
+	animation-name: expand-fade-in;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+}
+
+.menu-item {
+  height: 3em;
+	align-self: center;
+	margin: 5px;
+  
+}
+
+.menu-link:hover {
+  color: yellowgreen;
+  font-size: 2.5em;
+}
+
+.menu-link {
+  text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: palevioletred;
+  transition: all 1s ease-out;
+}
+
+.box {
+	height: 10px;
+	width: 10px;
+	animation: move 2s ease-in-out 0s 2 alternate-reverse forwards;
+}
+
+.box-one {
+	background: #53a8b6;
+    margin: 0;
+}
+
+.box-two {
+	background: #738cff;
+    margin: 0;
+}
+
+.box-three {
+	background: #79c2d0;
+    margin: 0;
+}
+
+.box-four {
+	background: #bbe4e9;
+    margin: 0;
+}
+
+
+@keyframes expand-fade-in {
+	from {opacity: 0%;}
+	to {opacity: 100%;}
+}
+
+@keyframes move {
+	100% {transform: translate(10vw, 10vh) scaleX(5) skew(60deg)}
+}
+

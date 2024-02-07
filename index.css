@@ -1,5 +1,5 @@
 html body {
-  font-family: Roboto, sans-serif; 
+  font-family:'Courier New', Courier, monospace;
   text-align: center;
   margin: 0;
 	padding: 0;
@@ -18,7 +18,8 @@ html body {
 	font-weight: bolder;
 	text-transform: uppercase;
 	font-size: 6em;
-	text-align: left;
+	text-align: center;
+	font-family: fantasy;
 }
 
 .menu {
@@ -40,11 +41,6 @@ html body {
 	align-self: center;
 	margin: 5px;
   
-}
-
-.menu-link:hover {
-  color: #4d748b;
-  /* font-size: 2.5em; */
 }
 
 .menu-link, 
@@ -78,13 +74,13 @@ a {
 	animation-duration: 1.5s;
 	animation-delay: 1s;
 	animation-timing-function: ease-out;
-	
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h2 {
 	color: #ffb5b5;
 	font-style: italic;
-	
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .latest-picture {
@@ -110,11 +106,10 @@ h2 {
 #about-her h2 {
 	color: #ffb5b5;
 	/* position: fixed; */
-	transform: translate();
-	animation-name: transform;
-	animation-duration: 2s;
-	animation-delay: 1s;
-	animation-iteration-count: 5;
+	animation-name: glow;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	
 }
 
 .sza-bio {
@@ -128,17 +123,21 @@ h2 {
 } 
 
 .sza-discography ul{
-	top: 10px;
-	position:relative;
+	position: relative;
+	top: 5rem;
 	list-style-type: none;
 	color:#40826D;
 	font-weight: bold;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size: 3vh;
+	display:inline;
+	z-index: 0;
+	
 }
 
 .sza-discography img{
 	position: relative;
+	margin-top: 10px;
 }
 
 .sza-discography img:hover {
@@ -146,7 +145,8 @@ h2 {
 	animation-name: transform;
 	animation-duration: 2s;
 	animation-delay: 0.5s;
-	animation-iteration-count: 5;
+	/* animation-iteration-count: 5; */
+	animation-fill-mode: forwards;
 }
 
 @keyframes expand-fade-in {
@@ -155,8 +155,14 @@ h2 {
 }
 
 @keyframes transform {
-	to {transform: translateX(-70%);}
+	to {transform: translateX(-75%);}
 }
+
+@keyframes glow {
+	from {color:#ffb5b5;}
+	to {color: gold}
+}
+
 
 
 

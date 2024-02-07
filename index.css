@@ -8,9 +8,10 @@ html body {
 }
 
 .title-wrapper{
-  margin: 0;
+  /* margin: 0; */
 	padding: 10px;
 	background-color: #40826D;
+	width: 100%;
 }
   
 .title {
@@ -55,6 +56,7 @@ a {
 
 .tag-line p {
   font-style: italic;
+	font-size: 2rem;
 }
 
 .container {
@@ -117,10 +119,15 @@ h2 {
 	/* padding: 1rem; */
 }
 
- #discography {
+#discography {
 	background-color: whitesmoke;
 	padding: 1rem; 
+	width: 100%
 } 
+
+#discography h2 {
+	margin-bottom: 0;
+}
 
 .sza-discography ul{
 	position: relative;
@@ -137,7 +144,7 @@ h2 {
 
 .sza-discography img{
 	position: relative;
-	margin-top: 10px;
+	margin-top: 0px;
 }
 
 .sza-discography img:hover {
@@ -149,13 +156,17 @@ h2 {
 	animation-fill-mode: forwards;
 }
 
+footer ul {
+	list-style-type: none;
+}
+
 @keyframes expand-fade-in {
 	from {opacity: 0%;}
 	to {opacity: 100%;}
 }
 
 @keyframes transform {
-	to {transform: translateX(-75%);}
+	to {transform: translateX(-80%);}
 }
 
 @keyframes glow {
@@ -163,6 +174,10 @@ h2 {
 	to {color: gold}
 }
 
+@keyframes fade-out {
+	from {opacity: 100%;}
+	to {opacity: 0%;}
+}
 
 
 

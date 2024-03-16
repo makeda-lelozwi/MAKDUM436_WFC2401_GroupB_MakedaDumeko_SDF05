@@ -1,21 +1,24 @@
-html body {
+body {
   font-family:'Courier New', Courier, monospace;
   text-align: center;
   margin: 0;
 	padding: 0;
   color: #ffb5b5;
 	background-color: #013220;
+  
 }
 
+
+
 .title-wrapper{
-  /* margin: 0; */
-	padding: 10px;
+   margin: 0;
+	padding: 0.5rem;
 	background-color: #40826D;
-	width: 100%;
+	width: 100vw;
 }
   
 .title {
-  margin: 0;
+  margin: 0; 
 	font-weight: bolder;
 	text-transform: uppercase;
 	font-size: 6em;
@@ -24,23 +27,24 @@ html body {
 }
 
 .menu {
-	margin: 0;
-	width: 100%;
-	padding: 5px;
+	/* margin: 0;
+	padding: 5px; */
 	background: whitesmoke;
-	min-height: 10vh;
+	/* min-height: 10vh; */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: center;
 	flex-wrap: wrap;
+  width: 100vw;
+
 	
 }
 
 .menu-item {
   height: 3em;
 	align-self: center;
-	margin: 5px;
+	
   
 }
 
@@ -120,16 +124,52 @@ h2 {
 }
 
 #discography {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 	background-color: whitesmoke;
 	padding: 1rem; 
-	width: 100%
+	width: 100%;
+  /* border: red;
+  border-style: solid;
+  border-width: 2px; */
 } 
+
+.discography-title {
+  width:100%;
+  /* border: red;
+  border-style: solid;
+  border-width: 2px; */
+}
 
 #discography h2 {
 	margin-bottom: 0;
 }
 
-.sza-discography ul{
+.discography-types {
+  width: 100%;
+  /* border: red;
+  border-style: solid;
+  border-width: 2px; */
+}
+
+#discography a {
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#discography a:hover {
+  color:gold;
+}
+
+.albums {
+  display: flex;
+  gap: 3rem;
+  /* border: red;
+  border-style: solid;
+  border-width: 2px; */
+}
+
+.albums ul{
 	position: relative;
 	top: 5rem;
 	list-style-type: none;
@@ -142,12 +182,13 @@ h2 {
 	
 }
 
-.sza-discography img{
+.albums img{
 	position: relative;
 	margin-top: 0px;
+  width: 300px;
 }
 
-.sza-discography img:hover {
+.albums img:hover {
 	transform: translate();
 	animation-name: transform;
 	animation-duration: 2s;
